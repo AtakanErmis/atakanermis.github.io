@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="Atakan Ermiş'in kişisel web sayfası.'" />
+    <meta
+      name="keywords"
+      content="atakan,ermiş,ermis,front,end,design,designer,tasarım,tasarımcı,developer,geliştirici,programlama,kodlama"
+    />
+    <meta name="author" content="Atakan Ermiş" />
+    <meta
+      name="google-site-verification"
+      content="fQVK_7bqvAHF83wFveqAmXO_Q9QGyKJB_E9I7cyENMg"
+    />
+    <link rel="shortcut icon" href="%PUBLIC_URL%/assets/favicon.png" />
+    <title>Atakan Ermiş</title>
+    <style>
+      body {
+        background-color: #000;
+      }
+
+      @keyframes rotating {
+        from {
+          -webkit-transform: rotate(0deg);
+        }
+        to {
+          -webkit-transform: rotate(360deg);
+        }
+      }
+
+      #preload {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        width: 48px;
+        height: 48px;
+        margin-left: -24px;
+        margin-top: -24px;
+        border: #ddd 3px solid;
+        border-left-color: transparent;
+        border-radius: 50%;
+        animation: rotating 1s linear infinite;
+      }
+    </style>
+  </head>
+  <body>
+    <noscript>
+      Bu sayfayı görüntülemek için Javascript'i etkinleştirin.
+    </noscript>
+    <div id="preload"></div>
+    <div id="root"></div>
+  </body>
+</html>
