@@ -5,17 +5,17 @@ import Header from "./components/Header";
 import Main from "./components/Main";
 
 class App extends Component {
-  componentDidMount() {
-    document.querySelector("#preload").remove();
-  }
-  render() {
-    return (
-      <div>
-        <Header />
-        <Main />
-      </div>
-    );
-  }
+    componentDidMount() {
+        document.querySelector("#preload").remove();
+    }
+    render() {
+        return (
+            <div className="main-view">
+                <Header />
+                <Main />
+            </div>
+        );
+    }
 }
 
 ReactDOM.render(<App />, document.getElementById("root"));
