@@ -32,7 +32,7 @@ const social_links = [
     {
         name: "Instagram",
         icon: faInstagram,
-        link: "https://instagram.com/ermisatakan"
+        link: "https://instagram.com/atakanermis"
     },
     { name: "E-Mail", icon: faEnvelope, link: "mailto:me@atakanermis.tk" }
 ];
