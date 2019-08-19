@@ -14,6 +14,9 @@ main
         border-radius: 50%
         text-align: center
         background: black
+        transform: translateY(-2rem)
+        opacity: 0
+        animation: mainload 450ms cubic-bezier(.17,.89,.01,1.27) forwards
         transition: 250ms background
         
         a
@@ -32,4 +35,15 @@ main
         font-size: 25px
         transition: 250ms all
         color: white
+        
+    @for $i from 1 through 7
+        ul li:nth-child(#{$i})
+            animation-delay: $i * 75ms
 
+@keyframes mainload
+    0%
+        transform: translateY(-2rem)
+        opacity: 0
+    100%
+        transform: translateY(0)
+        opacity: 1

@@ -1,5 +1,4 @@
 import React from "react";
-import Anime from "react-anime";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import {
@@ -41,26 +40,19 @@ const Main = () => {
     return (
         <main>
             <ul>
-                <Anime
-                    delay={(el, i) => i * 100 + 500}
-                    duration={1000}
-                    opacity={[0, 1]}
-                    bottom={[55, 0]}
-                >
-                    {social_links.map(e => (
-                        <li key={social_links.indexOf(e)}>
-                            <a
-                                className="social_link"
-                                href={e.link}
-                                aria-label={e.name}
-                                rel="noopener noreferrer"
-                                target="_blank"
-                            >
-                                <FontAwesomeIcon icon={e.icon} />
-                            </a>
-                        </li>
-                    ))}
-                </Anime>
+                {social_links.map(e => (
+                    <li key={social_links.indexOf(e)}>
+                        <a
+                            className="social_link"
+                            href={e.link}
+                            aria-label={e.name}
+                            rel="noopener noreferrer"
+                            target="_blank"
+                        >
+                            <FontAwesomeIcon icon={e.icon} />
+                        </a>
+                    </li>
+                ))}
             </ul>
         </main>
     );
