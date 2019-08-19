@@ -34,7 +34,7 @@ const social_links = [
         icon: faInstagram,
         link: "https://instagram.com/atakanermis"
     },
-    { name: "E-Mail", icon: faEnvelope, link: "mailto:me@atakanermis.tk" }
+    { name: "E-Mail", icon: faEnvelope, link: "mailto:me@atakanermis.me" }
 ];
 
 const Main = () => {
