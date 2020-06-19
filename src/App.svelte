@@ -21,10 +21,12 @@
     text-align: center;
     font-size: 48px;
     letter-spacing: 3px;
-    animation-name: startup-h1;
-    animation-duration: 1s;
+    animation: startup 1s forwards;
   }
   h2 {
+    opacity: 0;
+    text-align: center;
+    animation: startup 1s 250ms forwards;
     font-weight: 400;
   }
   ul {
@@ -73,7 +75,7 @@
     }
   }
 
-  @keyframes startup-h1 {
+  @keyframes startup {
     0% {
       opacity: 0;
     }
