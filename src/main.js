@@ -39,7 +39,7 @@ const socialLinks = [
 	{
 		name: "E-Mail",
 		icon: "ri-mail-line",
-		link: "mailto:me@atakanermis.me"
+		link: "mailto:ataerms@gmail.com"
 	}
 ];
 
