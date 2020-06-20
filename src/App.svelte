@@ -4,7 +4,7 @@
 </script>
 
 <style type="text/scss">
-  @import url("https://fonts.googleapis.com/css?family=Exo+2&display=swap&text=ATKNERMİŞ");
+  @import url("https://fonts.googleapis.com/css?family=Exo+2&display=swap");
   main {
     background: black;
     width: 100%;
