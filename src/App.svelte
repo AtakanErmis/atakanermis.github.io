@@ -17,6 +17,9 @@
     font-family: "Exo 2", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
       Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   }
+  .content {
+    padding: 0 30px;
+  }
   h1 {
     text-align: center;
     font-size: 48px;
@@ -86,19 +89,21 @@
 </style>
 
 <main>
-  <h1>ATAKAN ERMİŞ</h1>
-  <h2>Software Developer</h2>
-  <ul>
-    {#each socialLinks as { name, link, icon }}
-      <li>
-        <a
-          href={link}
-          aria-label={name}
-          rel="noopener noreferrer"
-          target="_blank">
-          <i class={icon} />
-        </a>
-      </li>
-    {/each}
-  </ul>
+  <div class="content">
+    <h1>ATAKAN ERMİŞ</h1>
+    <h2>Software Developer</h2>
+    <ul>
+      {#each socialLinks as { name, link, icon }}
+        <li>
+          <a
+            href={link}
+            aria-label={name}
+            rel="noopener noreferrer"
+            target="_blank">
+            <i class={icon} />
+          </a>
+        </li>
+      {/each}
+    </ul>
+  </div>
 </main>
