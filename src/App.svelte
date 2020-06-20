@@ -18,7 +18,7 @@
       Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   }
   .content {
-    padding: 0 30px;
+    padding: 30px;
   }
   h1 {
     text-align: center;
