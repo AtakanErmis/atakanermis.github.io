@@ -61,7 +61,7 @@
     }
   }
 
-  @for $i from 1 through 8 {
+  @for $i from 1 through 7 {
     ul li:nth-child(#{$i}) {
       animation-delay: $i * 75ms;
     }

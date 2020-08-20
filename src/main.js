@@ -32,11 +32,6 @@ const socialLinks = [
 		link: "https://open.spotify.com/user/5c9in3cvvftwlkbaeqcfvsdok?si=g6Llj8FyQTmMMN40HUgTOg"
 	},
 	{
-		name: "Instagram",
-		icon: "ri-instagram-line",
-		link: "https://instagram.com/atakanermis"
-	},
-	{
 		name: "E-Mail",
 		icon: "ri-mail-line",
 		link: "mailto:ataerms@gmail.com"
