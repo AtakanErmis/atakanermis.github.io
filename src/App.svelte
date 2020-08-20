@@ -1,6 +1,6 @@
 <script>
+  import Blog from "./Blog.svelte";
   export let socialLinks;
-  let name = "atakan";
 </script>
 
 <style type="text/scss">
@@ -14,8 +14,6 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    font-family: "Exo 2", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-      Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   }
   .content {
     padding: 30px;
@@ -61,9 +59,38 @@
     }
   }
 
+  .blog-indicator {
+    position: absolute;
+    bottom: 1rem;
+    opacity: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    animation-name: fade;
+    animation-delay: 100ms;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    svg {
+      margin-top: 1rem;
+      transform: scale(0.75);
+    }
+    p {
+      font-size: 0.8rem;
+    }
+  }
+
   @for $i from 1 through 8 {
     ul li:nth-child(#{$i}) {
       animation-delay: $i * 75ms;
+    }
+  }
+
+  @keyframes fade {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
     }
   }
 
@@ -106,4 +133,16 @@
       {/each}
     </ul>
   </div>
+  <div class="blog-indicator">
+    <svg
+      width="130"
+      height="30"
+      viewBox="0 0 130 30"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg">
+      <path d="M1 2L65 27.6L129 2" stroke="white" stroke-width="4" />
+    </svg>
+  </div>
 </main>
+
+<Blog />
